@@ -12,7 +12,7 @@ namespace ECommerceDualPrint3D.Modelos
         [Display(Name="Nombre de la categoría")]
         public string Nombre { get; set; }
 
-        [Required(ErrorMessage = "El campo Nombre es obligatorio")]
+        [Required(ErrorMessage = "El orden de visualización es obligatorio")]
         [Range(1,int.MaxValue, ErrorMessage = "El orden debe ser mayor que 0")]
         [Display(Name = "Orden de Visualizacion")]
         public int OrdenVisualizacion { get; set; }

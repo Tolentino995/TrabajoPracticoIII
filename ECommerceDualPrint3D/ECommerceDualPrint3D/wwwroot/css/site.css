@@ -20,3 +20,11 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.validation-summary-valid {
+    display: none; /*Oculta el contenedor cuando no hay errores*/
+}
+
+.validation-summary-errors {
+    display: block; /*Muestra el contenedor si hay errores*/
+}
