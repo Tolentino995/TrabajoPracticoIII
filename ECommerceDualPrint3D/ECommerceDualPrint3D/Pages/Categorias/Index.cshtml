@@ -1,0 +1,58 @@
+﻿@page
+@model ECommerceDualPrint3D.Pages.Categorias.IndexModel
+@{
+    ViewData["Title"] = "Lista de categorías";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Lista de Categorias</h2>
+        <a asp-page="Crear" class="btn btn alert-primary">
+            <i class="fa-solid fa-plus"></i>Nueva Categoría
+        </a>
+    </div>
+
+    @if(Model.Categorias != null && Model.Categorias.Any())
+    {
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Orde de Visualización</th>
+                    <th>Fecha de Creación</th>
+                    <th>Acciones</th>
+                </tr>
+                <tbody>
+                    @foreach(var categoria in Model.Categorias)
+                    {
+                        <tr>
+                            <td>@categoria.Id</td>
+                            <td>@categoria.Nombre</td>
+                            <td>@categoria.OrdenVisualizacion</td>
+                            <td>@categoria.FechaCreacion.ToString("dd/MM/yyy")</td>
+                            <td>
+                                <a asp-page="Editar" asp-route-id="@categoria.Id" class="btn btn-sm btn-warning">
+                                <i class="fa-regular fa-pen-to-square"></i> Editar
+                                </a>
+                                <a asp-page="Detalle" asp-route-id="@categoria.Id" class="btn btn-sm btn-info">
+                                <i class="fa-regular fa-circle-question"></i> Detalle
+                                </a>
+                                <a asp-page="Borrar" asp-route-id="@categoria.Id" class="btn btn-sm btn-danger">
+                                <i class="fa-regular fa-trash-can"></i> Eliminar
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </thead>
+        </table>
+        
+    }else
+    {   
+        <div class=" alert alert-info role= "alert">
+            No hay categorías registradas aún
+        </div>
+        
+    }
+</div>

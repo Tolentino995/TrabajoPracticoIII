@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ECommerceDualPrint3D.Modelos;
+using Microsoft.EntityFrameworkCore;
 
 namespace ECommerceDualPrint3D.Datos
 {
@@ -9,5 +10,6 @@ namespace ECommerceDualPrint3D.Datos
         }
 
         //Aqui Añadiremos los modelos(tabla)
+        public DbSet<Categoria> Categorias { get; set; }
     }
 }
