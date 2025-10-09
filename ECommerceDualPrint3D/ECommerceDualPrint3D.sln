@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceDualPrint3D", "ECommerceDualPrint3D\ECommerceDualPrint3D.csproj", "{57EB840D-56A6-4B25-8493-86874625E694}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57EB840D-56A6-4B25-8493-86874625E694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57EB840D-56A6-4B25-8493-86874625E694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57EB840D-56A6-4B25-8493-86874625E694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57EB840D-56A6-4B25-8493-86874625E694}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FF0D104-3CC4-4B8A-B002-DDCF7BF1D28E}
+	EndGlobalSection
+EndGlobal
