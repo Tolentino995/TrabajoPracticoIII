@@ -1,0 +1,66 @@
+﻿@page "{id:int}"
+@model ECommerceDualPrint3D.Pages.Categorias.EditarModel
+@{
+    ViewData["Title"] = "Editar categoría";
+}
+
+<h2 class="text-center">Editar categoría</h2>
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
+            <h4><i class="fade fa-plus-circle"></i> Editar Categoría </h4>
+        </div>
+        <div class="card-body">
+            <form method="POST">
+                <!--Campo oculto para el ID-->
+                    <input type="hidden" asp-for="Categoria.Id"/>
+                <!-- Validation Summary -->
+                <div asp-validation-summary="All" class="alert alert-danger d-none" id="validation-summary"></div>
+                <!--Campo: Nombre-->
+                <div class="mb-3">
+                    <label asp-for="Categoria.Nombre" class="form-label"></label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-tag"></i></span>
+                        <input asp-for="Categoria.Nombre" class="form-control" placeholder="Ingresa el nombre de categoría" />
+                    </div>
+                    <span asp-validation-for="Categoria.Nombre" class="text-danger"></span>
+                </div>
+                <!--Campo: Orden de Visualización-->
+                <div class="mb-3">
+                    <label asp-for="Categoria.OrdenVisualizacion" class="form-label"></label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-sort-numeric-up-alt"></i></span>
+                        <input asp-for="Categoria.OrdenVisualizacion" class="form-control" placeholder="Ingresa el orden de visualización" />
+                    </div>
+                    <span asp-validation-for="Categoria.OrdenVisualizacion" class="text-danger"></span>
+                </div>
+                <!--Botones-->
+                <div class="d-flex justify-content-between">
+                    <a asp-page="Index" class="btn btn-secondary">
+                        <i class="fa fa-arrow-left"></i> Regresar
+                    </a>
+                    <button type="submit" class="btn btn-success">
+                        <i class="fade fa-save"></i> Guardar Cambios
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const validationSummary = document.getElementById("validation-summary");
+
+            // Para no mostrar el contenedor de errores
+            if(validationSummary.innerHTML.trim() !== "")
+            {
+                validationSummary.classList.remove("d-none");
+            }
+        })
+    </script>
+}
