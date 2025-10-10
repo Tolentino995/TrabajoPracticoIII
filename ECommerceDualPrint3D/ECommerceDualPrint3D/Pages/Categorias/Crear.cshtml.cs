@@ -25,6 +25,15 @@ namespace ECommerceDualPrint3D.Pages.Categorias
 
         public async Task<IActionResult> OnPostAsync()
         {
+            // Validación personalizada: Comprobar si el nombre de la categoría ya existe
+
+            bool nombreExiste = _context.Categorias.Any(c => c.Nombre == Categoria.Nombre);
+            if (nombreExiste)
+            {
+                ModelState.AddModelError("Categoria.Nombre", "El nombre de la categoría ya existe. Por favor, elige otro nombre.");
+                return Page();
+            }
+
             if (!ModelState.IsValid)
             {
                 return Page();
