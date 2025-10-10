@@ -23,5 +23,19 @@ namespace ECommerceDualPrint3D.Pages.Categorias
                 .OrderBy(c => c.OrdenVisualizacion) //Ordena por campo el OrdenVisuali..
                 .ToListAsync();
         }
+
+        public async Task<IActionResult> OnPostDeleteAsync([FromBody]int id)
+        {
+            var categoria = await _context.Categorias.FindAsync(id);
+            if (categoria == null)
+            {
+                return NotFound();
+            }
+
+            _context.Categorias.Remove(categoria);
+            await _context.SaveChangesAsync();
+
+            return new JsonResult(new { success = true });
+        }
     }
 }

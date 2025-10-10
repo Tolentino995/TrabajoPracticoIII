@@ -38,9 +38,14 @@
                                 <a asp-page="Detalle" asp-route-id="@categoria.Id" class="btn btn-sm btn-info">
                                 <i class="fa-regular fa-circle-question"></i> Detalle
                                 </a>
-                                <a asp-page="Borrar" asp-route-id="@categoria.Id" class="btn btn-sm btn-danger">
+                                @* <a asp-page="Borrar" asp-route-id="@categoria.Id" class="btn btn-sm btn-danger">
                                 <i class="fa-regular fa-trash-can"></i> Eliminar
-                                </a>
+                                </a> *@
+
+                                @Html.AntiForgeryToken()
+                                <button class="btn btn-danger btn-delete" data-id="@categoria.Id" data-name="@categoria.Nombre">
+                                    <i class="fa-solid fa-trash-can"></i> Eliminar
+                                </button>
                             </td>
                         </tr>
                     }
@@ -56,3 +61,56 @@
         
     }
 </div>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll('.btn-delete').forEach(button => {
+            button.addEventListener('click', function () {
+                const categoriaId = this.getAttribute('data-id');
+                const categoriaName = this.getAttribute('data-name');
+
+                Swal.fire({
+                    title: `¿Estás seguro de eliminar la categoría "${categoriaName}"?`,
+                    text: "Esta acción no se puede deshacer.",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#d33",
+                    cancelButtonColor: "#3085d6",
+                    confirmButtonText: "Sí, eliminar",
+                    cancelButtonText: "Cancelar"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        console.log(JSON.stringify(categoriaId));
+                        fetch("?handler=Delete", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                                "RequestVerificationToken": document.querySelector('input[name="__RequestVerificationToken"]').value
+                            },
+                            body: JSON.stringify(categoriaId) // Asegúrate de enviar el id como un número
+
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                Swal.fire(
+                                    "Eliminado",
+                                    `La categoría "${categoriaName}" ha sido eliminada.`,
+                                    "success"
+                                ).then(() => {
+                                    window.location.reload();
+                                });
+                            } else {
+                                Swal.fire(
+                                    "Error",
+                                    data.message || "Ocurrió un problema al eliminar la categoría.",
+                                    "error"
+                                );
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}
