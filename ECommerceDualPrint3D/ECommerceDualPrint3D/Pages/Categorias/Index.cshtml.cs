@@ -29,12 +29,14 @@ namespace ECommerceDualPrint3D.Pages.Categorias
             var categoria = await _context.Categorias.FindAsync(id);
             if (categoria == null)
             {
-                return NotFound();
+                TempData["Error"] = "La categoría no fue encontrada";
+                return RedirectToPage("Index");
+
             }
 
             _context.Categorias.Remove(categoria);
             await _context.SaveChangesAsync();
-
+            TempData["Success"]= "Categoria Eliminada Correctamente";
             return new JsonResult(new { success = true });
         }
     }

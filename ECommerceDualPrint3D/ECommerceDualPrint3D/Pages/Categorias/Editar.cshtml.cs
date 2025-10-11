@@ -50,7 +50,7 @@ namespace ECommerceDualPrint3D.Pages.Categorias
             //Guardar Cambios
 
             await _context.SaveChangesAsync();
-
+            TempData["Success"] = "La categoría se ha editado correctamente.";
             return RedirectToPage("Index");
         }
     }
