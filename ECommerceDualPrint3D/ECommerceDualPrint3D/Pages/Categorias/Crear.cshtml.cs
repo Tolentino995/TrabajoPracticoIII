@@ -45,6 +45,9 @@ namespace ECommerceDualPrint3D.Pages.Categorias
             _context.Categorias.Add(Categoria); 
             await _context.SaveChangesAsync();
 
+            //TempData para mensaje al volver al Index
+            TempData["Success"] = "La categoría se ha creado correctamente.";
+
             return RedirectToPage("Index");
         }
     }
