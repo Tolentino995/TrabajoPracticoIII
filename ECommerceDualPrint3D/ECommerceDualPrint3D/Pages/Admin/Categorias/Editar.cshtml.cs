@@ -3,7 +3,7 @@ using ECommerce.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ECommerceDualPrint3D.Pages.Categorias
+namespace ECommerceDualPrint3D.Pages.Admin.Categorias
 {
     public class EditarModel : PageModel
     {

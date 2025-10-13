@@ -1,20 +1,16 @@
-﻿@page "{id:int}"
-@model ECommerceDualPrint3D.Pages.Categorias.EditarModel
+﻿@page
+@model ECommerceDualPrint3D.Pages.Admin.Categorias.CrearModel
 @{
-    ViewData["Title"] = "Editar categoría";
+    ViewData["Title"] = "Crear categoría";
 }
-
-<h2 class="text-center">Editar categoría</h2>
 
 <div class="container mt-5">
     <div class="card shadow-lg">
         <div class="card-header bg-primary text-white">
-            <h4><i class="fade fa-plus-circle"></i> Editar Categoría </h4>
+            <h4><i class="fade fa-plus-circle"></i> Crear Nueva Categoría </h4>
         </div>
         <div class="card-body">
             <form method="POST">
-                <!--Campo oculto para el ID-->
-                    <input type="hidden" asp-for="Categoria.Id"/>
                 <!-- Validation Summary -->
                 <div asp-validation-summary="All" class="alert alert-danger d-none" id="validation-summary"></div>
                 <!--Campo: Nombre-->
@@ -37,12 +33,12 @@
                 </div>
                 <!--Botones-->
                 <div class="d-flex justify-content-between">
-                    <a asp-page="Index" class="btn btn-secondary">
-                        <i class="fa fa-arrow-left"></i> Regresar
-                    </a>
-                    <button type="submit" class="btn btn-success">
-                        <i class="fade fa-save"></i> Guardar Cambios
-                    </button>
+                     <a asp-page="Index" class="btn btn-secondary">
+                         <i class="fa fa-arrow-left"></i> Regresar
+                     </a>
+                     <button type="submit" class="btn btn-success">
+                         <i class="fade fa-save"></i> Guardar
+                     </button>
                 </div>
             </form>
         </div>
