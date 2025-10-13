@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace ECommerce.DataAccess.Repository.IRepository
 {
-    internal interface IRepository<T>where T : class
+    public interface IRepository<T> where T : class
     {
         //Métodos para CRUD
         void Add(T entity);
         void Remove(T entity);  
         void RemoveRange(IEnumerable<T> entity);    
         IEnumerable<T> GetAll();    
-        T GetFirstOrDefault(Expression<Func<T, bool>> ? filter = null);  
+        T GetFirstOrDefault(Expression<Func<T, bool>> filter = null); 
+        bool ExisteNombre(string nombre);
     }
 }

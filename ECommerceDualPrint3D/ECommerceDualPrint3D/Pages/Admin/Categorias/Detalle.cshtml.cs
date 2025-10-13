@@ -1,23 +1,24 @@
+using ECommerce.DataAccess;
+using ECommerce.DataAccess.Repository.IRepository;
 using ECommerce.Models;
 using Microsoft.AspNetCore.Mvc;
-using ECommerce.DataAccess;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ECommerceDualPrint3D.Pages.Admin.Categorias
 {
     public class DetalleModel : PageModel
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public DetalleModel(ApplicationDbContext context)
+        public DetalleModel(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         public Categoria Categoria { get; set; }
         public async Task<IActionResult> OnGetAsync(int id)
         {
-            Categoria = await _context.Categorias.FindAsync(id);
+            Categoria = _unitOfWork.Categoria.GetFirstOrDefault(c => c.Id == id);
             if (Categoria == null)
             {
                 return NotFound();

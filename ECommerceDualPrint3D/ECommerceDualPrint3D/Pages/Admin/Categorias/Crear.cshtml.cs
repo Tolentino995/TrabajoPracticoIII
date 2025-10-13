@@ -1,5 +1,6 @@
-using ECommerce.Models;
 using ECommerce.DataAccess;
+using ECommerce.DataAccess.Repository.IRepository;
+using ECommerce.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -7,11 +8,12 @@ namespace ECommerceDualPrint3D.Pages.Admin.Categorias
 {
     public class CrearModel : PageModel
     {
-        private readonly ApplicationDbContext _context;
+        //Inyeccion de dependencias
+        private readonly IUnitOfWork _unitOfWork;
 
-        public CrearModel(ApplicationDbContext context)
+        public CrearModel(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         //Propiedad con BindProperty
@@ -27,11 +29,20 @@ namespace ECommerceDualPrint3D.Pages.Admin.Categorias
         {
             // Validación personalizada: Comprobar si el nombre de la categoría ya existe
 
-            bool nombreExiste = _context.Categorias.Any(c => c.Nombre == Categoria.Nombre);
-            if (nombreExiste)
+            //bool nombreExiste = _bdCategoria.Categorias.Any(c => c.Nombre == Categoria.Nombre);
+            //if (nombreExiste)
+            //{
+            //    ModelState.AddModelError("Categoria.Nombre", "El nombre de la categoría ya existe. Por favor, elige otro nombre.");
+            //    return Page();
+            //}
+
+            //Validacion personalizada: Comprobar si el nombre de la categoría ya existe 2.2v
+
+            if (_unitOfWork.Categoria.ExisteNombre(Categoria.Nombre))
             {
                 ModelState.AddModelError("Categoria.Nombre", "El nombre de la categoría ya existe. Por favor, elige otro nombre.");
                 return Page();
+
             }
 
             if (!ModelState.IsValid)
@@ -42,8 +53,8 @@ namespace ECommerceDualPrint3D.Pages.Admin.Categorias
 
             Categoria.FechaCreacion = DateTime.Now;
 
-            _context.Categorias.Add(Categoria); 
-            await _context.SaveChangesAsync();
+            _unitOfWork.Categoria.Add(Categoria);
+            _unitOfWork.Save();
 
             //TempData para mensaje al volver al Index
             TempData["Success"] = "La categoría se ha creado correctamente.";

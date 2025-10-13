@@ -1,5 +1,4 @@
 ﻿using ECommerce.DataAccess.Repository.IRepository;
-
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -26,13 +25,18 @@ namespace ECommerce.DataAccess.Repository
 
         }
 
+        public bool ExisteNombre(string nombre)
+        {
+            return _context.Categorias.Any(c => c.Nombre == nombre);
+        }
+
         public IEnumerable<T> GetAll()
         {
             IQueryable<T> query = dbSet;
             return query.ToList();
         }
 
-        public T GetFirstOrDefault(Expression<Func<T, bool>>? filter = null)
+        public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null)
         {
             IQueryable<T> query = dbSet;
             if (filter != null)

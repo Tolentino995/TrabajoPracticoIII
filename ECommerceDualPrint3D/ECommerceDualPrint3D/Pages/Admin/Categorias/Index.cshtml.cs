@@ -1,32 +1,31 @@
 using ECommerce.DataAccess;
+using ECommerce.DataAccess.Repository.IRepository;
+using ECommerce.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
-using ECommerce.Models;
 
 namespace ECommerceDualPrint3D.Pages.Admin.Categorias
 {
     public class IndexModel : PageModel
     {
-        private readonly ApplicationDbContext _context;
+        //Inyeccion de dependencias
+        private readonly IUnitOfWork _unitOfWork;
 
-        public IndexModel (ApplicationDbContext context)
+        public IndexModel (IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
-        public IList<Categoria> Categorias { get; set; } = default;
-        public async Task OnGetAsync()
+        public IEnumerable<Categoria> Categorias { get; set; } = default;
+        public void OnGet()
         {
             //Cargamos todas las categorias desde la base de datos
-            Categorias = await _context.Categorias
-                .OrderBy(c => c.OrdenVisualizacion) //Ordena por campo el OrdenVisuali..
-                .ToListAsync();
+            Categorias = _unitOfWork.Categoria.GetAll();
         }
-
         public async Task<IActionResult> OnPostDeleteAsync([FromBody]int id)
         {
-            var categoria = await _context.Categorias.FindAsync(id);
+            var categoria = _unitOfWork.Categoria.GetFirstOrDefault(c => c.Id == id);
             if (categoria == null)
             {
                 TempData["Error"] = "La categoría no fue encontrada";
@@ -34,9 +33,9 @@ namespace ECommerceDualPrint3D.Pages.Admin.Categorias
 
             }
 
-            _context.Categorias.Remove(categoria);
-            await _context.SaveChangesAsync();
-            TempData["Success"]= "Categoria Eliminada Correctamente";
+            _unitOfWork.Categoria.Remove(categoria);
+            _unitOfWork.Save();
+            TempData["Success"] = "Categoria Eliminada Correctamente";
             return new JsonResult(new { success = true });
         }
     }

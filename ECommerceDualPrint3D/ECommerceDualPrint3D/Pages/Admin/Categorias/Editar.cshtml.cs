@@ -1,4 +1,5 @@
 using ECommerce.DataAccess;
+using ECommerce.DataAccess.Repository.IRepository;
 using ECommerce.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -7,20 +8,20 @@ namespace ECommerceDualPrint3D.Pages.Admin.Categorias
 {
     public class EditarModel : PageModel
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public EditarModel(ApplicationDbContext context)
+        public EditarModel(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         //Propiedad con BindProperty
         [BindProperty]
 
-        public Categoria Categoria { get; set; } = default!;
+        public Categoria Categoria { get; set; } 
         public async Task<IActionResult> OnGetAsync(int id)
         {
-            Categoria = await _context.Categorias.FindAsync(id);
+            Categoria = _unitOfWork.Categoria.GetFirstOrDefault(c => c.Id == id);
 
             if (Categoria == null)
             {
@@ -36,7 +37,7 @@ namespace ECommerceDualPrint3D.Pages.Admin.Categorias
                 return Page();
             }
 
-            var categoriaBd = await _context.Categorias.FindAsync(Categoria.Id);
+            var categoriaBd = _unitOfWork.Categoria.GetFirstOrDefault(c => c.Id == Categoria.Id);
             if (categoriaBd == null)
             {
                 return NotFound();
@@ -49,7 +50,7 @@ namespace ECommerceDualPrint3D.Pages.Admin.Categorias
 
             //Guardar Cambios
 
-            await _context.SaveChangesAsync();
+            _unitOfWork.Save();
             TempData["Success"] = "La categoría se ha editado correctamente.";
             return RedirectToPage("Index");
         }
