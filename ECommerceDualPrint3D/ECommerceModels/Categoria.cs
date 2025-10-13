@@ -18,5 +18,8 @@ namespace ECommerce.Models
         public int OrdenVisualizacion { get; set; }
 
         public DateTime FechaCreacion { get; set; } = DateTime.Now;// Fecha predeterminada a la hora de la cració n  
+
+        //Relación uno a muchos con Producto
+        public ICollection<Producto> Productos { get; set; }    
     }
 }
