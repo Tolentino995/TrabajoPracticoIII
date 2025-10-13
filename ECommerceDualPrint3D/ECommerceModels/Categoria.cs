@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ECommerceDualPrint3D.Modelos
+namespace ECommerce.Models
 {
     public class Categoria
     {
