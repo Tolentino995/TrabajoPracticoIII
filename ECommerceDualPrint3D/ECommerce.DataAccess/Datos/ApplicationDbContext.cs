@@ -1,7 +1,7 @@
 ﻿using ECommerce.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ECommerce.DataAcces
+namespace ECommerce.DataAccess
 {
     public class ApplicationDbContext : DbContext
     {

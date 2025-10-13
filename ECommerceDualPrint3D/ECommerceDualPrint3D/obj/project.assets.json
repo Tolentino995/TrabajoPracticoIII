@@ -4035,7 +4035,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "ECommerce.DataAccess >= 1.0.0",
-      "ECommerce.Models >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.20",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.20"
     ]
@@ -4074,9 +4073,6 @@
           "projectReferences": {
             "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerce.DataAccess\\ECommerce.DataAccess.csproj": {
               "projectPath": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerce.DataAccess\\ECommerce.DataAccess.csproj"
-            },
-            "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceModels\\ECommerce.Models.csproj": {
-              "projectPath": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceModels\\ECommerce.Models.csproj"
             }
           }
         }

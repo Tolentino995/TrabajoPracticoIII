@@ -1,5 +1,5 @@
 using ECommerce.Models;
-using ECommerce.DataAcces;
+using ECommerce.DataAccess;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 

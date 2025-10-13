@@ -9,7 +9,6 @@
       "ECommerceDualPrint3D/1.0.0": {
         "dependencies": {
           "ECommerce.DataAccess": "1.0.0",
-          "ECommerce.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.20",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.20"
         },
