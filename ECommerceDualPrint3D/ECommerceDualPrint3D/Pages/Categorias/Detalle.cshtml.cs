@@ -1,6 +1,6 @@
-using ECommerceDualPrint3D.Datos;
-using ECommerceDualPrint3D.Modelos;
+using ECommerce.Models;
 using Microsoft.AspNetCore.Mvc;
+using ECommerce.DataAcces;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ECommerceDualPrint3D.Pages.Categorias

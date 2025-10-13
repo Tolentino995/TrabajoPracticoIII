@@ -1,7 +1,7 @@
-﻿using ECommerceDualPrint3D.Modelos;
+﻿using ECommerce.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ECommerceDualPrint3D.Datos
+namespace ECommerce.DataAcces
 {
     public class ApplicationDbContext : DbContext
     {

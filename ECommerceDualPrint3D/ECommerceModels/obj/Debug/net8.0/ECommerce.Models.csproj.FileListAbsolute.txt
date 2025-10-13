@@ -1,0 +1,12 @@
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\bin\Debug\net8.0\ECommerce.Models.deps.json
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\bin\Debug\net8.0\ECommerce.Models.dll
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\bin\Debug\net8.0\ECommerce.Models.pdb
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\ECommerce.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\ECommerce.Models.AssemblyInfoInputs.cache
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\ECommerce.Models.AssemblyInfo.cs
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\ECommerce.Models.csproj.CoreCompileInputs.cache
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\ECommerce.Models.sourcelink.json
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\ECommerce.Models.dll
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\refint\ECommerce.Models.dll
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\ECommerce.Models.pdb
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\ref\ECommerce.Models.dll

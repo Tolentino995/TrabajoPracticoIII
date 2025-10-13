@@ -292,3 +292,7 @@ C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECo
 C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\obj\Debug\net8.0\ECommerceDualPrint3D.csproj.AssemblyReference.cache
 C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\obj\Debug\net8.0\ECommerceDualPrint3D.sourcelink.json
 C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\obj\Debug\net8.0\ECommerc.2A1D15C7.Up2Date
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\bin\Debug\net8.0\ECommerce.DataAccess.dll
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\bin\Debug\net8.0\ECommerce.Models.dll
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\bin\Debug\net8.0\ECommerce.DataAccess.pdb
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\bin\Debug\net8.0\ECommerce.Models.pdb

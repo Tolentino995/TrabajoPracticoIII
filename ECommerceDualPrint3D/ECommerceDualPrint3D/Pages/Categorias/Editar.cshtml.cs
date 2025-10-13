@@ -1,5 +1,5 @@
-using ECommerceDualPrint3D.Datos;
-using ECommerceDualPrint3D.Modelos;
+using ECommerce.DataAcces;
+using ECommerce.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 

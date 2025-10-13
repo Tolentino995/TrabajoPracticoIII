@@ -1,4 +1,4 @@
-using ECommerceDualPrint3D.Datos;
+using ECommerce.DataAcces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

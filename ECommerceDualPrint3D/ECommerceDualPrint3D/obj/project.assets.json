@@ -1494,6 +1494,30 @@
             "rid": "win"
           }
         }
+      },
+      "ECommerce.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ECommerce.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.20"
+        },
+        "compile": {
+          "bin/placeholder/ECommerce.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.DataAccess.dll": {}
+        }
+      },
+      "ECommerce.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Models.dll": {}
+        }
       }
     }
   },
@@ -3996,10 +4020,22 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ECommerce.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../ECommerce.DataAccess/ECommerce.DataAccess.csproj",
+      "msbuildProject": "../ECommerce.DataAccess/ECommerce.DataAccess.csproj"
+    },
+    "ECommerce.Models/1.0.0": {
+      "type": "project",
+      "path": "../ECommerceModels/ECommerce.Models.csproj",
+      "msbuildProject": "../ECommerceModels/ECommerce.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "ECommerce.DataAccess >= 1.0.0",
+      "ECommerce.Models >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.20",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.20"
     ]
@@ -4035,7 +4071,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerce.DataAccess\\ECommerce.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerce.DataAccess\\ECommerce.DataAccess.csproj"
+            },
+            "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceModels\\ECommerce.Models.csproj": {
+              "projectPath": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceModels\\ECommerce.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
