@@ -18,7 +18,7 @@ namespace ECommerce.Models
 
         [Required(ErrorMessage = "La descripción es obligatorio")]
         [StringLength(100, ErrorMessage = "El descripción no puede superar las 500 caracteres.")]
-        public string Descripsion { get; set; }
+        public string Descripcion { get; set; }
 
         [Required(ErrorMessage = "La imagen es obligatorio")]
         [StringLength(300, ErrorMessage = "El ruta de la imagen no puede superar las 300 caracteres.")]
@@ -26,6 +26,7 @@ namespace ECommerce.Models
 
         [Required(ErrorMessage = "La precio es obligatorio")]
         [Range(0.01,double.MaxValue ,ErrorMessage = "El precio debe ser mayor a 0")]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Precio { get; set; }
 
         // En caso de llevar el control a otro nivel se puede cambiar el inventario de forma externa
