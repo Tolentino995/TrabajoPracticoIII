@@ -23,6 +23,7 @@
                     <th>Descripción</th>
                     <th>Imagen</th>
                     <th>Precio</th>
+                    <th>Cantidad Disponible</th>
                     <th>Categoría</th>
                     <th>Fecha de Creación</th>
                     <th>Acciones</th>
@@ -35,8 +36,9 @@
                         <td>@producto.Nombre</td>
                         <td>@producto.Descripcion</td>
                         <td>@producto.Imagen</td>
+                        <td>@producto.Precio</td>
                         <td>@producto.CantidadDisponible</td>
-                        <td>@producto.Categoria</td>
+                        <td>@producto.CategoriaId</td>
                         <td>@producto.FechaCreacion.ToString("dd/MM/yyy")</td>
                         <td>
                             <a asp-page="Editar" asp-route-id="@producto.Id" class="btn btn-sm btn-warning">
@@ -45,12 +47,9 @@
                             <a asp-page="Detalle" asp-route-id="@producto.Id" class="btn btn-sm btn-info">
                                 <i class="fa-regular fa-circle-question"></i> Detalle
                             </a>
-                            <a asp-page="Borrar" asp-route-id="@producto.Id" class="btn btn-sm btn-danger">
-                                <i class="fa-regular fa-trash-can"></i> Eliminar
-                            </a> 
 
                             @Html.AntiForgeryToken()
-                            <button class="btn btn-danger btn-delete" data-id="@producto.Id" data-name="@producto.Nombre">
+                            <button class="btn btn-danger btn-sm btn-delete" data-id="@producto.Id" data-name="@producto.Nombre">
                                 <i class="fa-solid fa-trash-can"></i> Eliminar
                             </button>
                         </td>
