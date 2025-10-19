@@ -33,9 +33,12 @@ namespace ECommerce.Models
         [Required(ErrorMessage = "La cantidad es obligatorio")]
         [Range(0.01, double.MaxValue, ErrorMessage = "La cantidad no puede ser negativo")]
         public int CantidadDisponible { get; set; } // Controlar el inventario
+        public DateTime FechaCreacion { get; set; } = DateTime.Now;// Fecha predeterminada a la hora de la cració n 
         [Required(ErrorMessage = "La categoría es obligatorio")]
         public int CategoriaId { get; set; }
         [ForeignKey("CategoriaId")]
         public Categoria Categoria { get; set; }
+
+
     }
 }
