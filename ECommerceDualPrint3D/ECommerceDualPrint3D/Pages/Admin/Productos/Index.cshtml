@@ -38,7 +38,7 @@
                         <td>@producto.Imagen</td>
                         <td>@producto.Precio</td>
                         <td>@producto.CantidadDisponible</td>
-                        <td>@producto.CategoriaId</td>
+                        <td>@producto.Categoria.Nombre</td>
                         <td>@producto.FechaCreacion.ToString("dd/MM/yyy")</td>
                         <td>
                             <a asp-page="Editar" asp-route-id="@producto.Id" class="btn btn-sm btn-warning">

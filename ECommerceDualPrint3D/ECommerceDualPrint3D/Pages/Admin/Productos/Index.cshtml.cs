@@ -9,6 +9,7 @@ namespace ECommerceDualPrint3D.Pages.Admin.Productos
     {
         //Inyeccion de dependencias
         private readonly IUnitOfWork _unitOfWork;
+        
 
         public IndexModel(IUnitOfWork unitOfWork)
         {
@@ -18,7 +19,7 @@ namespace ECommerceDualPrint3D.Pages.Admin.Productos
         public void OnGet()
         {
             //Cargamos todas las categorias desde la base de datos
-            Productos = _unitOfWork.Producto.GetAll();
+            Productos = _unitOfWork.Producto.GetAll("Categoria");
         }
     }
 }

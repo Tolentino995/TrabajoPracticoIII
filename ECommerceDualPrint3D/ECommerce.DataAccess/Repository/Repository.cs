@@ -30,9 +30,17 @@ namespace ECommerce.DataAccess.Repository
             return _context.Categorias.Any(c => c.Nombre == nombre);
         }
 
-        public IEnumerable<T> GetAll()
+        public IEnumerable<T> GetAll(string? includePropierties = null)
         {
             IQueryable<T> query = dbSet;
+            //Incluimos la relacion 
+            if (!string.IsNullOrWhiteSpace(includePropierties))
+            {
+                foreach (var includeProperty in includePropierties.Split(',', StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProperty.Trim());
+                }
+            }
             return query.ToList();
         }
 
