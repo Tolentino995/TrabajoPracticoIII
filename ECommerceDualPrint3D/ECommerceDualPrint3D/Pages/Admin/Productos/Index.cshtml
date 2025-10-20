@@ -35,7 +35,10 @@
                         <td>@producto.Id</td>
                         <td>@producto.Nombre</td>
                         <td>@producto.Descripcion</td>
-                        <td>@producto.Imagen</td>
+                        <td>
+                            <img src="@Url.Content($"~/productos/{producto.Imagen}")"
+                            alt="Imagen de @producto.Nombre" style="width: 80px; height: auto;" />
+                        </td>
                         <td>@producto.Precio</td>
                         <td>@producto.CantidadDisponible</td>
                         <td>@producto.Categoria.Nombre</td>
@@ -80,6 +83,9 @@
                     pageLength: 10, // Número de filas por pagínas
                     ordering: true, // Habilitar ordenamiento
                     searching: true, // Habilitar búsqueda
+                    columnDefs: [
+                        { orderable: false, targets: [3, 8] } // Deshabilitar ordenamiento en las columnas de imagen y acciones
+                    ]
             });
         });
     </script>
