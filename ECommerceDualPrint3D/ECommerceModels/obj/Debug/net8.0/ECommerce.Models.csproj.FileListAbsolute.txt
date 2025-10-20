@@ -10,3 +10,4 @@ C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECo
 C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\refint\ECommerce.Models.dll
 C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\ECommerce.Models.pdb
 C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\ref\ECommerce.Models.dll
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceModels\obj\Debug\net8.0\ECommerce.Models.csproj.AssemblyReference.cache

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -21,9 +22,11 @@ namespace ECommerce.Models
         [StringLength(100, ErrorMessage = "El descripción no puede superar las 500 caracteres.")]
         public string Descripcion { get; set; }
 
-        [Required(ErrorMessage = "La imagen es obligatorio")]
-        [StringLength(300, ErrorMessage = "El ruta de la imagen no puede superar las 300 caracteres.")]
-        public string Imagen { get; set; }
+        //[Required(ErrorMessage = "La imagen es obligatorio")]
+        //[StringLength(300, ErrorMessage = "El ruta de la imagen no puede superar las 300 caracteres.")]
+        public string? Imagen { get; set; }
+        [NotMapped] // Esta propiedad no se mapea a la base de datos
+        public IFormFile? ImagenSubida { get; set; } // Propiedad para manejar la imagen subida
 
         [Required(ErrorMessage = "La precio es obligatorio")]
         [Range(0.01,double.MaxValue ,ErrorMessage = "El precio debe ser mayor a 0")]
