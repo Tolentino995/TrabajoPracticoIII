@@ -59,6 +59,7 @@ wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\productos\0f55d860-d037-405c-b471-781b3472217f.jpeg
+wwwroot\productos\28e8faf5-e037-4dd3-b84c-27888828f897.png
 wwwroot\productos\Calvera_JSTICK.jpg
 wwwroot\productos\Coca-cola2l.jpg
 wwwroot\productos\test.jpg

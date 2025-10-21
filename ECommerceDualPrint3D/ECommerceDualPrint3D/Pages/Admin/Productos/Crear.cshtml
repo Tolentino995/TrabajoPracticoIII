@@ -64,7 +64,9 @@
                     <label asp-for="Producto.CategoriaId" class="form-label"></label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa-solid fa-list"></i></span>
-                        <input asp-for="Producto.CategoriaId" class="form-control" placeholder="Ingresa la categoria" />
+                        <select asp-for="Producto.CategoriaId" asp-items="Model.Categorias" class="form-control">
+                            <option value="">-- Selecciona una categoría --</option>
+                        </select>
                     </div>
                     <span asp-validation-for="Producto.CategoriaId" class="text-danger"></span>
                 </div>
