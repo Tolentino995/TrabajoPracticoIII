@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\pages\\admin\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\pages\\admin\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\pages\\admin\\productos\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\pages\\admin\\productos\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\pages\\admin\\productos\\editar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\pages\\admin\\productos\\editar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\pages\\admin\\categorias\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\pages\\admin\\categorias\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2DC3F77-267E-4B22-8E2C-1B0908B0F670}|ECommerce.DataAccess\\ECommerce.DataAccess.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommerce.dataaccess\\repository\\productorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2DC3F77-267E-4B22-8E2C-1B0908B0F670}|ECommerce.DataAccess\\ECommerce.DataAccess.csproj|solutionrelative:ecommerce.dataaccess\\repository\\productorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\pages\\admin\\productos\\detalle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\pages\\admin\\productos\\detalle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\pages\\admin\\productos\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\pages\\admin\\productos\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\pages\\admin\\productos\\crear.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\pages\\admin\\productos\\crear.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\pages\\admin\\productos\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\pages\\admin\\productos\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D1466F8-DFF0-41CA-839B-9633C8118CD8}|ECommerceModels\\ECommerce.Models.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercemodels\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D1466F8-DFF0-41CA-839B-9633C8118CD8}|ECommerceModels\\ECommerce.Models.csproj|solutionrelative:ecommercemodels\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\pages\\admin\\categorias\\detalle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\pages\\admin\\categorias\\detalle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,93 +42,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Index.cshtml",
-              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Index.cshtml",
-              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Index.cshtml",
-              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACkAAABvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-24T11:27:24.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerce.DataAccess\\Repository\\ProductoRepository.cs",
-              "RelativeDocumentMoniker": "ECommerce.DataAccess\\Repository\\ProductoRepository.cs",
-              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerce.DataAccess\\Repository\\ProductoRepository.cs",
-              "RelativeToolTip": "ECommerce.DataAccess\\Repository\\ProductoRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T20:22:54.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceModels\\Producto.cs",
-              "RelativeDocumentMoniker": "ECommerceModels\\Producto.cs",
-              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceModels\\Producto.cs",
-              "RelativeToolTip": "ECommerceModels\\Producto.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCcAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T13:57:55.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Crear.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Crear.cshtml.cs",
-              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Crear.cshtml.cs",
-              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Crear.cshtml.cs",
-              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Crear.cshtml.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAqwG8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T13:32:32.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Crear.cshtml",
-              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Crear.cshtml",
-              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Crear.cshtml",
-              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Crear.cshtml",
-              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Crear.cshtml",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAQwCwAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-21T11:56:34.59Z",
+              "Title": "Detalle.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Categorias\\Detalle.cshtml.cs",
+              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Pages\\Admin\\Categorias\\Detalle.cshtml.cs",
+              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Categorias\\Detalle.cshtml.cs",
+              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Admin\\Categorias\\Detalle.cshtml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T11:49:54.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Editar.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Editar.cshtml.cs",
-              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Editar.cshtml.cs",
-              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Editar.cshtml.cs",
-              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Editar.cshtml.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAIwH0AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T11:32:31.976Z",
+              "Title": "Detalle.cshtml",
+              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Categorias\\Detalle.cshtml",
+              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Pages\\Admin\\Categorias\\Detalle.cshtml",
+              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Categorias\\Detalle.cshtml",
+              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Admin\\Categorias\\Detalle.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T11:45:02.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Editar.cshtml",
-              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Editar.cshtml",
-              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Editar.cshtml",
-              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Editar.cshtml",
-              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Editar.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAADsAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Detalle.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Detalle.cshtml.cs",
+              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Detalle.cshtml.cs",
+              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Detalle.cshtml.cs",
+              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Detalle.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T11:44:46.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Detalle.cshtml",
+              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Detalle.cshtml",
+              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Detalle.cshtml",
+              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Detalle.cshtml",
+              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Admin\\Productos\\Detalle.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-21T11:32:22.478Z",
+              "WhenOpened": "2025-10-24T11:44:26.887Z",
               "EditorCaption": ""
             }
           ]

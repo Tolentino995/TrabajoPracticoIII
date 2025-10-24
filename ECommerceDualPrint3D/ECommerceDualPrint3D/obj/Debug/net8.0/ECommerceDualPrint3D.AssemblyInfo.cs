@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ECommerceDualPrint3D")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8779f3ea5d415851bfe94adf9776f0464065c3d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3db02972b909a34c2fb0f5622a79ad56916ef231")]
 [assembly: System.Reflection.AssemblyProductAttribute("ECommerceDualPrint3D")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ECommerceDualPrint3D")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
