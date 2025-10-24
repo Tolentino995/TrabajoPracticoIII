@@ -29,7 +29,7 @@ namespace ECommerce.Models
         public IFormFile? ImagenSubida { get; set; } // Propiedad para manejar la imagen subida
 
         [Required(ErrorMessage = "La precio es obligatorio")]
-        [Range(0.01,double.MaxValue ,ErrorMessage = "El precio debe ser mayor a 0")]
+        [Range(0.01,double.MaxValue , ErrorMessage = "El precio debe ser mayor a 0")]
         [Column(TypeName = "decimal(18,2)")]
         public decimal Precio { get; set; }
 

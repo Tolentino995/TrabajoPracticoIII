@@ -42,11 +42,26 @@
                     <span asp-validation-for="Producto.Imagen" class="text-danger"></span>
                 </div>
                 <!--Campo: Precio-->
-                <div class="mb-3">
+                                            <!--Se modifica porque no acpeta numeros decimales-->
+                @* <div class="mb-3">
                     <label asp-for="Producto.Precio" class="form-label"></label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa-solid fa-money-bill-wave"></i></span>
                         <input asp-for="Producto.Precio" class="form-control" placeholder="Ingresa el precio" />
+                    </div>
+                    <span asp-validation-for="Producto.Precio" class="text-danger"></span>
+                </div> *@
+                <div class="mb-3">
+                    <label asp-for="Producto.Precio" class="form-label"></label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-money-bill-wave"></i></span>
+                        <input asp-for="Producto.Precio"
+                               type="number"
+                               class="form-control"
+                               placeholder="Ingresa el precio"
+                               step="0.01"
+                               min="0"
+                               lang="es-AR" />
                     </div>
                     <span asp-validation-for="Producto.Precio" class="text-danger"></span>
                 </div>

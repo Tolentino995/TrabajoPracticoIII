@@ -24,10 +24,7 @@ namespace ECommerce.DataAccess.Repository
             objDesdeBd.Precio = producto.Precio;
             objDesdeBd.CantidadDisponible = producto.CantidadDisponible;
             objDesdeBd.CategoriaId = producto.CategoriaId;
-            if (producto.Imagen != null)
-            {
-                objDesdeBd.Imagen = producto.Imagen;
-            }   
+            objDesdeBd.Imagen = producto.Imagen;
 
         }
     }

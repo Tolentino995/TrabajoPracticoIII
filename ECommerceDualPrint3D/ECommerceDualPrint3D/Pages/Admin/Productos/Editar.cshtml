@@ -11,6 +11,10 @@
         </div>
         <div class="card-body">
             <form method="POST" enctype="multipart/form-data">
+
+                <!--Enviar Id del producto como campo oculto-->
+                <input type="hidden" asp-for="Producto.Id" />
+
                 <!--Esto es importante para la subida de archivo enctype="multipart/form-data">-->
                 <!-- Validation Summary -->
                 <div asp-validation-summary="All" class="alert alert-danger d-none" id="validation-summary"></div>
@@ -57,7 +61,13 @@
                     <label asp-for="Producto.Precio" class="form-label"></label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa-solid fa-money-bill-wave"></i></span>
-                        <input asp-for="Producto.Precio" class="form-control" placeholder="Ingresa el precio" />
+                        <input asp-for="Producto.Precio"
+                               type="number"
+                               class="form-control"
+                               placeholder="Ingresa el precio"
+                               step="0.01"
+                               min="0"
+                               lang="es-AR" />
                     </div>
                     <span asp-validation-for="Producto.Precio" class="text-danger"></span>
                 </div>
