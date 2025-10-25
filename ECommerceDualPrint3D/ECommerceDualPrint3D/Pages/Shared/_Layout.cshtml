@@ -66,6 +66,27 @@
     <script src="https://cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
+                                @* Fue sacado de Tiny Cloud!!! *@
+
+    <!-- Place the first <script> tag in your HTML's <head> -->
+    <script src="https://cdn.tiny.cloud/1/1o7q7njn75r7d0aaawftgrwrc2epq5a0p2x3z8gqocpdgvn0/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
+
+    <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
+    <script>
+        tinymce.init({
+            selector: 'textarea', // Aplica a todos los <textarea>
+            menubar: false, // Sin menú superior (File, Edit, View, etc.)
+            branding: false, // Oculta el logo de TinyMCE
+            height: 250, // Altura del editor
+            language: 'es', // En español
+
+            plugins: 'lists link table code', // Solo lo esencial
+            toolbar: 'undo redo | bold italic underline | bullist numlist | alignleft aligncenter alignright | link table | removeformat code', // Botones básicos
+
+            placeholder: 'Escribí aquí la descripción del producto...',
+            content_style: 'body { font-family: "Krub", sans-serif; font-size: 14px; }'
+        });
+    </script>
     <!--Mostrar Toastr -->
     <script>
         $(document).ready(function(){
