@@ -73,18 +73,55 @@
 
     <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
     <script>
-        tinymce.init({
-            selector: 'textarea', // Aplica a todos los <textarea>
-            menubar: false, // Sin menú superior (File, Edit, View, etc.)
-            branding: false, // Oculta el logo de TinyMCE
-            height: 250, // Altura del editor
-            language: 'es', // En español
+        document.addEventListener("DOMContentLoaded", function () {
+            // Solo inicializa TinyMCE en los textarea que tengan la clase .editor
+            tinymce.init({
+                selector: 'textarea.editor', // 👈 solo en los textarea con clase .editor
+                menubar: false,
+                branding: false,
+                height: 250,
+                language: 'es',
 
-            plugins: 'lists link table code', // Solo lo esencial
-            toolbar: 'undo redo | bold italic underline | bullist numlist | alignleft aligncenter alignright | link table | removeformat code', // Botones básicos
+                plugins: 'lists link code',
+                toolbar: 'undo redo | bold italic underline | bullist numlist | alignleft aligncenter alignright | link | removeformat | code',
 
-            placeholder: 'Escribí aquí la descripción del producto...',
-            content_style: 'body { font-family: "Krub", sans-serif; font-size: 14px; }'
+                placeholder: 'Escribí aquí la descripción del producto...',
+
+                valid_elements: 'p,b,strong,i,em,ul,ol,li,br,a[href]',
+                invalid_styles: { '*': 'color font-size background background-color' },
+                invalid_elements: 'span,div,script,style,img,table,tr,td,th,h1,h2,h3,h4,h5,h6',
+
+                forced_root_block: 'p',
+                verify_html: true,
+                cleanup: true,
+                cleanup_on_startup: true,
+                remove_trailing_brs: true,
+
+                content_style: 'body { font-family: "Krub", sans-serif; font-size: 14px; line-height: 1.6; }',
+
+                // 🧮 Contador de caracteres
+                setup: function (editor) {
+                    const maxChars = 500;
+
+                    // Solo agrega contador si existe el contenedor debajo del textarea
+                    editor.on('init', function () {
+                        const textarea = editor.targetElm;
+                        let contador = textarea.parentElement.querySelector('.contador');
+                        if (!contador) return;
+
+                        const actualizar = () => {
+                            const texto = editor.getContent({ format: 'text' }).trim();
+                            const length = texto.length;
+                            contador.textContent = `${length} / ${maxChars} caracteres`;
+                            contador.style.color = length > maxChars ? 'red' : '#6c757d';
+                        };
+
+                        editor.on('input', actualizar);
+                        editor.on('change', actualizar);
+                        actualizar();
+                    });
+                }
+            });
         });
     </script>
     <!--Mostrar Toastr -->

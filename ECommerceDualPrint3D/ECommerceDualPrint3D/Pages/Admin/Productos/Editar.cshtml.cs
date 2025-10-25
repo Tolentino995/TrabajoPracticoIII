@@ -54,6 +54,14 @@ namespace ECommerceDualPrint3D.Pages.Admin.Productos
 
         public async Task<IActionResult> OnPostAsync()
         {
+            // Siempre recargamos categorías, por si hay errores de validación
+            Categorias = _unitOfWork.Categoria.GetAll()
+                .Select(c => new SelectListItem
+                {
+                    Value = c.Id.ToString(),
+                    Text = c.Nombre
+                });
+
             //Validacion personalizada: Comprobar si el nombre de la categoría ya existe 2.2v
 
             if (_unitOfWork.Categoria.ExisteNombre(Producto.Nombre))
@@ -126,9 +134,28 @@ namespace ECommerceDualPrint3D.Pages.Admin.Productos
                 }
             }
 
-                // Asignar la fecha de creación
+            // Quitar etiquetas HTML, espacios y entidades antes de contar caracteres
+            string descripcion = Producto.Descripcion ?? "";
 
-                Producto.FechaCreacion = DateTime.Now;
+            // 1. Eliminar etiquetas HTML
+            descripcion = System.Text.RegularExpressions.Regex.Replace(descripcion, "<[^>]+>", string.Empty);
+
+            // 2. Decodificar entidades HTML (&nbsp;, &amp;, etc.)
+            descripcion = System.Web.HttpUtility.HtmlDecode(descripcion);
+
+            // 3. Reemplazar saltos de línea y espacios repetidos
+            descripcion = System.Text.RegularExpressions.Regex.Replace(descripcion, @"\s+", " ").Trim();
+
+            // 4. Validar longitud limpia
+            if (descripcion.Length > 500)
+            {
+                ModelState.AddModelError("Producto.Descripcion", $"La descripción no puede superar los 500 caracteres (actual: {descripcion.Length}).");
+                return Page();
+            }
+
+            // Asignar la fecha de creación
+
+            Producto.FechaCreacion = DateTime.Now;
 
             _unitOfWork.Producto.Update(Producto);
             _unitOfWork.Save();

@@ -18,8 +18,7 @@ namespace ECommerce.Models
         public string Nombre { get; set; }
 
         [Display(Name = "Descripción")]
-        [Required(ErrorMessage = "La descripción es obligatorio")]
-        [StringLength(100, ErrorMessage = "El descripción no puede superar las 500 caracteres.")]
+        [Required(ErrorMessage = "La descripción es obligatoria")]
         public string Descripcion { get; set; }
 
         //[Required(ErrorMessage = "La imagen es obligatorio")]

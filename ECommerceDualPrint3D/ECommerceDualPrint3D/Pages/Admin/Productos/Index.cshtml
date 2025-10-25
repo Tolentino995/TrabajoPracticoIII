@@ -34,7 +34,7 @@
                     <tr>
                         <td>@producto.Id</td>
                         <td>@producto.Nombre</td>
-                        <td>@producto.Descripcion</td>
+                        <td>@Html.Raw(System.Web.HttpUtility.HtmlDecode(producto.Descripcion))</td>
                         <td>
                             <img src="@Url.Content($"~/productos/{producto.Imagen}")"
                             alt="Imagen de @producto.Nombre" style="width: 80px; height: auto;" />
