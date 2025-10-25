@@ -1,5 +1,9 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\js\categoriaTable.js
+wwwroot\js\eliminarCategoria.js
+wwwroot\js\eliminarProducto.js
+wwwroot\js\productoTable.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

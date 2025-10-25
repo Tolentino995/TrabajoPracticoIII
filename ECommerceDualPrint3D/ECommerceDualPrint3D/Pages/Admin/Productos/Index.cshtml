@@ -74,71 +74,8 @@
 </div>
 
 @section Scripts {
-
-    <script>
-        $(document).ready(function(){
-            $("#productosTables").DataTable({
-                language: {
-                    url: "//cdn.datatables.net/plug-ins/2.3.4/i18n/es-ES.json"// Traduce en español
-                },
-                    pageLength: 10, // Número de filas por pagínas
-                    ordering: true, // Habilitar ordenamiento
-                    searching: true, // Habilitar búsqueda
-                    columnDefs: [
-                        { orderable: false, targets: [3, 8] } // Deshabilitar ordenamiento en las columnas de imagen y acciones
-                    ]
-            });
-        });
-    </script>
-    <script>
-        document.querySelectorAll('.btn-delete').forEach(button => {
-            button.addEventListener('click', function () {
-                const productoId = this.getAttribute('data-id');
-                const productoName = this.getAttribute('data-name');
-
-                Swal.fire({
-                    title: `¿Estás seguro de eliminar el producto "${productoName}"?`,
-                    text: "Esta acción no se puede deshacer.",
-                    icon: "warning",
-                    showCancelButton: true,
-                    confirmButtonColor: "#d33",
-                    cancelButtonColor: "#3085d6",
-                    confirmButtonText: "Sí, eliminar",
-                    cancelButtonText: "Cancelar"
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        console.log(JSON.stringify(productoId));
-                        fetch("?handler=Delete", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json",
-                                "RequestVerificationToken": document.querySelector('input[name="__RequestVerificationToken"]').value
-                            },
-                            body: JSON.stringify(productoId) // Asegúrate de enviar el id como un número
-
-                        })
-                        .then(response => response.json())
-                        .then(data => {
-                            if (data.success) {
-                                Swal.fire(
-                                    "Eliminado",
-                                    `El producto "${productoName}" ha sido eliminada.`,
-                                    "success"
-                                ).then(() => {
-                                    window.location.reload();
-                                });
-                            } else {
-                                Swal.fire(
-                                    "Error",
-                                    data.message || "Ocurrió un problema al eliminar el producto.",
-                                    "error"
-                                );
-                            }
-                        });
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="~/js/productoTable.js"></script>
+    <script src="~/js/eliminarProducto.js"></script>
 }
+
 
