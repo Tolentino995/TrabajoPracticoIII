@@ -44,12 +44,22 @@ namespace ECommerce.DataAccess.Repository
             return query.ToList();
         }
 
-        public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null)
+        public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null, string? includePropierties = null)
         {
             IQueryable<T> query = dbSet;
             if (filter != null)
             {
                 query = query.Where(filter);
+            }
+            
+
+            //Incluimos la relacion 
+            if (!string.IsNullOrWhiteSpace(includePropierties))
+            {
+                foreach (var includeProperty in includePropierties.Split(',', StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProperty.Trim());
+                }
             }
             return query.FirstOrDefault();
         }

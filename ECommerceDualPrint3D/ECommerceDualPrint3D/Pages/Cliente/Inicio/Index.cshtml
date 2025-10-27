@@ -27,11 +27,11 @@
                         <!-- Inoformacion del producto-->
                         <p class="card-text text-muted">
                             <strong>Precio: </strong> $ @producto.Precio<br/>
-                            <strong>Categoría: </strong> $@producto.Categoria.Nombre<br/>
+                            <strong>Categoría: </strong> @producto.Categoria.Nombre<br/>
                         </p>
 
                         <!--Botón Detalle-->
-                        <a asp-page="/Producto/Detalle"
+                        <a asp-page="/Cliente/Inicio/Detalle"
                             asp-route-id="@producto.Id"
                             class="btn btn-dark mt-auto w-100 text-uppercase fw-bold">
                             Ver Detalle
