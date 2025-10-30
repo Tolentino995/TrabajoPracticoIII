@@ -2180,7 +2180,8 @@
       },
       "ECommerce.Models/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "5.0.17"
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "Microsoft.Extensions.Identity.Stores": "8.0.21"
         },
         "runtime": {
           "ECommerce.Models.dll": {
