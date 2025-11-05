@@ -12,13 +12,39 @@
             <h2>Create a new account.</h2>
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                    <!--Campos personalizados-->
             <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <input asp-for="Input.Nombres" class="form-control" autocomplete="username" aria-required="true" placeholder="Ingrese su nombres" />
+                <label asp-for="Input.Nombres">Nombres</label>
+                <span asp-validation-for="Input.Nombres" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Apellidos" class="form-control" autocomplete="username" aria-required="true" placeholder="Ingrese su apellidos" />
+                <label asp-for="Input.Apellidos">Apellidos</label>
+                <span asp-validation-for="Input.Apellidos" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Ciudad" class="form-control" aria-required="true" placeholder="Ingrese su ciudad" />
+                <label asp-for="Input.Ciudad">Ciudad</label>
+                <span asp-validation-for="Input.Ciudad" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Direccion" class="form-control" aria-required="true" placeholder="Ingrese su dirección" />
+                <label asp-for="Input.Direccion">Dirección</label>
+                <span asp-validation-for="Input.Direccion" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Pais" class="form-control" aria-required="true" placeholder="Ingrese su país" />
+                <label asp-for="Input.Pais">País</label>
+                <span asp-validation-for="Input.Pais" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Email" class="form-control" autocomplete="new-password"  aria-required="true" placeholder="name@example.com" />
                 <label asp-for="Input.Email">Email</label>
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password"  aria-required="true" placeholder="password" />
                 <label asp-for="Input.Password">Password</label>
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
