@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D1466F8-DFF0-41CA-839B-9633C8118CD8}|ECommerceModels\\ECommerce.Models.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercemodels\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D1466F8-DFF0-41CA-839B-9633C8118CD8}|ECommerceModels\\ECommerce.Models.csproj|solutionrelative:ecommercemodels\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E51C436A-1279-4140-91CA-0196BA9D81C3}|Ecommerce.Utility\\Ecommerce.Utility.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommerce.utility\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E51C436A-1279-4140-91CA-0196BA9D81C3}|Ecommerce.Utility\\Ecommerce.Utility.csproj|solutionrelative:ecommerce.utility\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E51C436A-1279-4140-91CA-0196BA9D81C3}|Ecommerce.Utility\\Ecommerce.Utility.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommerce.utility\\constantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E51C436A-1279-4140-91CA-0196BA9D81C3}|Ecommerce.Utility\\Ecommerce.Utility.csproj|solutionrelative:ecommerce.utility\\constantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,41 +46,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\Ecommerce.Utility\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Ecommerce.Utility\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\Ecommerce.Utility\\EmailSender.cs",
+              "RelativeToolTip": "Ecommerce.Utility\\EmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T20:01:43.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "ECommerceDualPrint3D\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-05T12:00:21.025Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Program.cs",
+              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Program.cs",
+              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Program.cs",
+              "RelativeToolTip": "ECommerceDualPrint3D\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABIAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T19:43:11.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceModels\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "ECommerceModels\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceModels\\ApplicationUser.cs",
-              "RelativeToolTip": "ECommerceModels\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T14:22:17.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeToolTip": "ECommerceDualPrint3D\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAIwBgAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAqwKEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T14:21:07.465Z",
+              "WhenOpened": "2025-11-05T14:21:43.279Z",
               "EditorCaption": ""
             },
             {
@@ -87,9 +91,22 @@
               "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeToolTip": "ECommerceDualPrint3D\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAADwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-30T13:52:17.497Z",
+              "WhenOpened": "2025-11-05T14:08:20.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Constantes.cs",
+              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\Ecommerce.Utility\\Constantes.cs",
+              "RelativeDocumentMoniker": "Ecommerce.Utility\\Constantes.cs",
+              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\Ecommerce.Utility\\Constantes.cs",
+              "RelativeToolTip": "Ecommerce.Utility\\Constantes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T14:03:05.971Z",
               "EditorCaption": ""
             }
           ]

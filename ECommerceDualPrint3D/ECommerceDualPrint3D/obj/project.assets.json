@@ -3088,6 +3088,19 @@
         "runtime": {
           "bin/placeholder/ECommerce.Models.dll": {}
         }
+      },
+      "Ecommerce.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "8.0.21"
+        },
+        "compile": {
+          "bin/placeholder/Ecommerce.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Utility.dll": {}
+        }
       }
     }
   },
@@ -8385,11 +8398,17 @@
       "type": "project",
       "path": "../ECommerceModels/ECommerce.Models.csproj",
       "msbuildProject": "../ECommerceModels/ECommerce.Models.csproj"
+    },
+    "Ecommerce.Utility/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Utility/Ecommerce.Utility.csproj",
+      "msbuildProject": "../Ecommerce.Utility/Ecommerce.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "ECommerce.DataAccess >= 1.0.0",
+      "Ecommerce.Utility >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.21",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.21",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.20",
@@ -8432,6 +8451,9 @@
           "projectReferences": {
             "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerce.DataAccess\\ECommerce.DataAccess.csproj": {
               "projectPath": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerce.DataAccess\\ECommerce.DataAccess.csproj"
+            },
+            "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\Ecommerce.Utility\\Ecommerce.Utility.csproj": {
+              "projectPath": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\Ecommerce.Utility\\Ecommerce.Utility.csproj"
             }
           }
         }

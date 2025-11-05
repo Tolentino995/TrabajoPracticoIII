@@ -2,6 +2,7 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 #nullable disable
 
+using Ecommerce.Utility;
 using ECommerce.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
@@ -30,13 +31,16 @@ namespace ECommerceDualPrint3D.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly RoleManager<IdentityRole> _roleManager;
+
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -44,6 +48,7 @@ namespace ECommerceDualPrint3D.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager;
         }
 
         /// <summary>
@@ -137,8 +142,28 @@ namespace ECommerceDualPrint3D.Areas.Identity.Pages.Account
 
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
+                // Manejamos los roles
+                if(!await _roleManager.RoleExistsAsync(Constantes.AdminRole))
+                {
+                    _roleManager.CreateAsync(new IdentityRole(Constantes.AdminRole)).GetAwaiter().GetResult();
+                    _roleManager.CreateAsync(new IdentityRole(Constantes.ClientRole)).GetAwaiter().GetResult();
+                }
+
                 if (result.Succeeded)
                 {
+                    string role = Request.Form["radioUserRole"].ToString();
+                    if (role == Constantes.AdminRole)
+                    {
+                        await _userManager.AddToRoleAsync(user, Constantes.AdminRole);
+                    }
+                    else
+                    {
+                        if (role == Constantes.ClientRole)
+                        {
+                            await _userManager.AddToRoleAsync(user, Constantes.ClientRole);
+                        }
+                    }   
+
                     _logger.LogInformation("User created a new account with password.");
 
                     var userId = await _userManager.GetUserIdAsync(user);

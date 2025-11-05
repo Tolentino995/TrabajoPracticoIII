@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceDualPrint3D", "ECommerceDualPrint3D\ECommerceDualPrint3D.csproj", "{57EB840D-56A6-4B25-8493-86874625E694}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E51C436A-1279-4140-91CA-0196BA9D81C3} = {E51C436A-1279-4140-91CA-0196BA9D81C3}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.DataAccess", "ECommerce.DataAccess\ECommerce.DataAccess.csproj", "{E2DC3F77-267E-4B22-8E2C-1B0908B0F670}"
 EndProject

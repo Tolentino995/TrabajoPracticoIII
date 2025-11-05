@@ -1,7 +1,9 @@
+using Ecommerce.Utility;
 using ECommerce.DataAccess;
 using ECommerce.DataAccess.Repository;
 using ECommerce.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,12 +14,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConexionSQL")
 ));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     options.SignIn.RequireConfirmedAccount = false)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+    .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+//Agregamos el servicio de envio de correos
+builder.Services.AddSingleton<IEmailSender, EmailSender>();
 
 //Agregamos Repositorios de contenedor de Inyeccion de dependencias
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(); ;

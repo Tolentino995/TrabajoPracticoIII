@@ -445,3 +445,5 @@ C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECo
 C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\bin\Debug\net8.0\Ecommerce.Utility.dll
+C:\Users\antho\OneDrive\Escritorio\TrabajoPracticoPPIII\ECommerceDualPrint3D\ECommerceDualPrint3D\bin\Debug\net8.0\Ecommerce.Utility.pdb
