@@ -15,13 +15,15 @@ namespace ECommerceDualPrint3D.Pages.Cliente.Inicio
             _unitOfWork = unitOfWork;
         }
         [BindProperty]
-        public Producto Producto { get; set; }
-
-        public int Cantidad { get; set; }
+        public CarritoCompra CarritoCompra { get; set; }
         public IActionResult OnGet(int id)
         {
-            Producto = _unitOfWork.Producto.GetFirstOrDefault(p => p.Id == id, "Categoria");
-            if(Producto == null)
+            CarritoCompra = new CarritoCompra()
+            {
+                Producto = _unitOfWork.Producto.GetFirstOrDefault(p => p.Id == id, "Categoria")
+            };
+            
+            if(CarritoCompra == null)
             {
                 return RedirectToPage("/Index");
             }
@@ -29,17 +31,17 @@ namespace ECommerceDualPrint3D.Pages.Cliente.Inicio
             return Page();
         }
 
-        public IActionResult OnPostAgregarAlCarrito()
-        {
-            if (Cantidad < 1 || Cantidad > Producto.CantidadDisponible)
-            {
-                ModelState.AddModelError("Cantidad", $"Debe ingresar un valor entre 1 y {Producto.CantidadDisponible}.");
-                return Page();
-            }
+        //public IActionResult OnPostAgregarAlCarrito()
+        //{
+        //    if (Cantidad < 1 || Cantidad > Producto.CantidadDisponible)
+        //    {
+        //        ModelState.AddModelError("Cantidad", $"Debe ingresar un valor entre 1 y {Producto.CantidadDisponible}.");
+        //        return Page();
+        //    }
 
-            // logica de agregar al carrito
-            TempData["Succes"] = $"{Cantidad} unidad(es) del Producto {Producto.Nombre} añadidas al carrito";
-            return RedirectToPage("/Index");
-        }
+        //    // logica de agregar al carrito
+        //    TempData["Succes"] = $"{Cantidad} unidad(es) del Producto {Producto.Nombre} añadidas al carrito";
+        //    return RedirectToPage("/Index");
+        //}
     }
 }

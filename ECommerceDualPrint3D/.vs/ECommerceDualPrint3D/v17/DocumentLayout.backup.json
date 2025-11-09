@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\pages\\cliente\\inicio\\detalle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D1466F8-DFF0-41CA-839B-9633C8118CD8}|ECommerceModels\\ECommerce.Models.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercemodels\\carritocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D1466F8-DFF0-41CA-839B-9633C8118CD8}|ECommerceModels\\ECommerce.Models.csproj|solutionrelative:ecommercemodels\\carritocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|c:\\users\\antho\\onedrive\\escritorio\\trabajopracticoppiii\\ecommercedualprint3d\\ecommercedualprint3d\\pages\\cliente\\inicio\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{57EB840D-56A6-4B25-8493-86874625E694}|ECommerceDualPrint3D\\ECommerceDualPrint3D.csproj|solutionrelative:ecommercedualprint3d\\pages\\cliente\\inicio\\detalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,14 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CarritoCompra.cs",
-              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceModels\\CarritoCompra.cs",
-              "RelativeDocumentMoniker": "ECommerceModels\\CarritoCompra.cs",
-              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceModels\\CarritoCompra.cs",
-              "RelativeToolTip": "ECommerceModels\\CarritoCompra.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA8AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T21:21:23.335Z",
+              "Title": "Detalle.cshtml",
+              "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Cliente\\Inicio\\Detalle.cshtml",
+              "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Pages\\Cliente\\Inicio\\Detalle.cshtml",
+              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Cliente\\Inicio\\Detalle.cshtml",
+              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Cliente\\Inicio\\Detalle.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T22:00:09.539Z",
               "EditorCaption": ""
             },
             {
@@ -51,11 +51,11 @@
               "Title": "Detalle.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Cliente\\Inicio\\Detalle.cshtml.cs",
               "RelativeDocumentMoniker": "ECommerceDualPrint3D\\Pages\\Cliente\\Inicio\\Detalle.cshtml.cs",
-              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Cliente\\Inicio\\Detalle.cshtml.cs",
-              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Cliente\\Inicio\\Detalle.cshtml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBMAAAApAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\antho\\OneDrive\\Escritorio\\TrabajoPracticoPPIII\\ECommerceDualPrint3D\\ECommerceDualPrint3D\\Pages\\Cliente\\Inicio\\Detalle.cshtml.cs*",
+              "RelativeToolTip": "ECommerceDualPrint3D\\Pages\\Cliente\\Inicio\\Detalle.cshtml.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T21:19:10.212Z",
+              "WhenOpened": "2025-11-09T21:58:00.821Z",
               "EditorCaption": ""
             }
           ]
