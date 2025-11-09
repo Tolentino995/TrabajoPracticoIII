@@ -17,7 +17,6 @@ namespace ECommerceDualPrint3D.Pages.Cliente.Inicio
         [BindProperty]
         public Producto Producto { get; set; }
 
-        [BindProperty]
         public int Cantidad { get; set; }
         public IActionResult OnGet(int id)
         {
