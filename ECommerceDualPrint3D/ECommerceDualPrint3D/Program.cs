@@ -18,6 +18,17 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
+//Soporte para la autenticacion con cookies y autorización
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = $"/Identity/Account/Login"; //Ruuta predeterminada para el login
+    options.LogoutPath = $"/Identity/Account/Logout"; //Ruuta predeterminada para el logout
+    options.AccessDeniedPath = $"/Identity/Account/AccessDenied"; //Ruuta predeterminada para el acceso denegado
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(30); //Tiempo de expiracion de la cookie
+    options.SlidingExpiration = true; //Renovar la cookie si el usuario esta activo
+    options.Cookie.HttpOnly = true; //Evitar acceso a la cookie desde JavaScript
+});
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 
@@ -41,9 +52,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
-app.UseAuthentication();    
+   
 app.MapRazorPages();
 
 // Redirigimos manualmente a la pagina deseada  

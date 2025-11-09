@@ -1,11 +1,13 @@
 using ECommerce.DataAccess.Repository.IRepository;
 using ECommerce.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace ECommerceDualPrint3D.Pages.Cliente.Inicio
 {
+    [Authorize]
     public class DetalleModel : PageModel
     {
         private readonly IUnitOfWork _unitOfWork;
