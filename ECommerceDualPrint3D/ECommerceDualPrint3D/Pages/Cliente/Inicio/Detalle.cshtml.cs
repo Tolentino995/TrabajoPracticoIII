@@ -22,8 +22,11 @@ namespace ECommerceDualPrint3D.Pages.Cliente.Inicio
 
         public IActionResult OnGet(int id)
         {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
             CarritoCompra = new ()
             {
+                ApplicationUserId = claim.Value,
                 Producto = _unitOfWork.Producto.GetFirstOrDefault(p => p.Id == id, "Categoria"),
                 ProductoId = id
             };
@@ -46,13 +49,20 @@ namespace ECommerceDualPrint3D.Pages.Cliente.Inicio
             if (ModelState.IsValid)
             {
                 // logica de agregar al carrito
-                var claimsIdentity = (ClaimsIdentity)User.Identity;
-                var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-                CarritoCompra.ApplicationUserId = claim.Value;
-
-                _unitOfWork.CarritoCompra.Add(CarritoCompra);
-                _unitOfWork.Save();
-                TempData["Success"] = $"{CarritoCompra.Cantidad} unidad(es) añadidas al carrito";
+                CarritoCompra carritoCompraDesdeBd = _unitOfWork.CarritoCompra.GetFirstOrDefault(
+                    filter: u => u.ApplicationUserId == CarritoCompra.ApplicationUserId 
+                    && u.ProductoId == CarritoCompra.ProductoId);
+                if (carritoCompraDesdeBd == null)
+                {
+                    _unitOfWork.CarritoCompra.Add(CarritoCompra);
+                    _unitOfWork.Save();
+                    TempData["Success"] = $"{CarritoCompra.Cantidad} unidad(es) añadidas al carrito";
+                }
+                else
+                {
+                    _unitOfWork.CarritoCompra.IncrementarContador(carritoCompraDesdeBd, CarritoCompra.Cantidad);
+                    TempData["Success"] = $"{CarritoCompra.Cantidad} unidad(es) actualizadas al carrito";
+                }
                 return RedirectToPage("/Cliente/Inicio/Index");
 
             }

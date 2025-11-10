@@ -44,7 +44,7 @@ namespace ECommerce.DataAccess.Repository
             return query.ToList();
         }
 
-        public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null, string? includePropierties = null)
+        public T GetFirstOrDefault(Expression<Func<T, bool>>? filter = null, string? includePropierties = null)
         {
             IQueryable<T> query = dbSet;
             if (filter != null)
