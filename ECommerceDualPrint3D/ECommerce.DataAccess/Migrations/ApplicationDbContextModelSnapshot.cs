@@ -72,6 +72,77 @@ namespace ECommerce.DataAccess.Migrations
                     b.ToTable("Categorias");
                 });
 
+            modelBuilder.Entity("ECommerce.Models.DetalleOrden", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NombreProducto")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("OrdenId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Precio")
+                        .HasColumnType("float");
+
+                    b.Property<int>("ProductoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrdenId");
+
+                    b.HasIndex("ProductoId");
+
+                    b.ToTable("DetalleOrdenes");
+                });
+
+            modelBuilder.Entity("ECommerce.Models.Orden", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Direccion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaOrden")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("InstruccionesAdicionales")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NombreUsuario")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefono")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("TotalOrden")
+                        .HasColumnType("float");
+
+                    b.Property<string>("TransaccionId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UsuarioId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("Ordenes");
+                });
+
             modelBuilder.Entity("ECommerce.Models.Producto", b =>
                 {
                     b.Property<int>("Id")
@@ -360,6 +431,34 @@ namespace ECommerce.DataAccess.Migrations
                     b.Navigation("ApplicationUser");
 
                     b.Navigation("Producto");
+                });
+
+            modelBuilder.Entity("ECommerce.Models.DetalleOrden", b =>
+                {
+                    b.HasOne("ECommerce.Models.Orden", "Orden")
+                        .WithMany()
+                        .HasForeignKey("OrdenId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ECommerce.Models.Producto", "Producto")
+                        .WithMany()
+                        .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Orden");
+
+                    b.Navigation("Producto");
+                });
+
+            modelBuilder.Entity("ECommerce.Models.Orden", b =>
+                {
+                    b.HasOne("ECommerce.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId");
+
+                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("ECommerce.Models.Producto", b =>
