@@ -50,7 +50,7 @@ namespace ECommerceDualPrint3D.Pages.Cliente.Inicio
             {
                 // logica de agregar al carrito
                 CarritoCompra carritoCompraDesdeBd = _unitOfWork.CarritoCompra.GetFirstOrDefault(
-                    filter: u => u.ApplicationUserId == CarritoCompra.ApplicationUserId 
+                     filter: u => u.ApplicationUserId == CarritoCompra.ApplicationUserId 
                     && u.ProductoId == CarritoCompra.ProductoId);
                 if (carritoCompraDesdeBd == null)
                 {

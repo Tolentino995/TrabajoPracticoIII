@@ -26,6 +26,7 @@ namespace ECommerce.DataAccess.Repository
         public int DecrementarContador(CarritoCompra carritoCompra, int contador)
         {
             carritoCompra.Cantidad -= contador;
+            _context.SaveChanges();
             return carritoCompra.Cantidad;
         }
     }
