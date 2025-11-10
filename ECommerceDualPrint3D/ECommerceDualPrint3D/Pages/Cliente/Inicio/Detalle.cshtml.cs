@@ -24,6 +24,7 @@ namespace ECommerceDualPrint3D.Pages.Cliente.Inicio
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
             CarritoCompra = new ()
             {
                 ApplicationUserId = claim.Value,
@@ -48,7 +49,32 @@ namespace ECommerceDualPrint3D.Pages.Cliente.Inicio
         //    }
             if (ModelState.IsValid)
             {
-                // logica de agregar al carrito
+                // Carga de producto
+                var producto = _unitOfWork.Producto.
+                    GetFirstOrDefault(p => p.Id == CarritoCompra.ProductoId);
+
+                if (producto == null)
+                {
+                    return NotFound("No se encontró el producto relacionado.");
+                }
+                // Validar si el inventario es 0
+                if (producto.CantidadDisponible <= 0)
+                {
+                    TempData["Error"] = "El producto ya no tiene inventario disponible.";
+                    return RedirectToAction("Detalle", new { id = CarritoCompra.ProductoId });
+                }
+
+
+                // Validar cantidad del carrito sea mayo
+                if (CarritoCompra.Cantidad < 1 || CarritoCompra.Cantidad > producto.CantidadDisponible)
+                {
+                    // ModelState.AddModelError("Cantidad", $"Debe ingresar un valor entre 1 y {Producto.CantidadDisponible}.");
+                    TempData["Error"] = $"Debe ingresar un valor entre 1 y {producto.CantidadDisponible}";
+                    return RedirectToAction("Detalle", new { id = CarritoCompra.ProductoId });
+                }
+                // Reducir la cantidad disponible
+                producto.CantidadDisponible -= CarritoCompra.Cantidad;
+                // Logica para Agrega al carrito
                 CarritoCompra carritoCompraDesdeBd = _unitOfWork.CarritoCompra.GetFirstOrDefault(
                      filter: u => u.ApplicationUserId == CarritoCompra.ApplicationUserId 
                     && u.ProductoId == CarritoCompra.ProductoId);
