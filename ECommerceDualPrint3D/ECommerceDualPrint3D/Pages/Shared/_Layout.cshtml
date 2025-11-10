@@ -32,15 +32,22 @@
                         <!--Menu Desplegable "Admin"-->
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Administración
-                            </a>
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Administración
+                                </a>
                             <ul class="dropdown-menu" aria-labelledby="adminDropdown">
                                 <li><a class="dropdown-item" asp-area="" asp-page="/Admin/Productos/Index">Productos</a></li>
                                 <li><a class="dropdown-item" asp-area="" asp-page="/Admin/Categorias/Index">Categorías</a></li>
                                @*  <li><a class="dropdown-item" asp-area="" asp-page="/Admin/Usuarios/Index">Usuarios</a></li>
                                 <li><a class="dropdown-item" asp-area="" asp-page="/Admin/Pedidos/Index">Pedidos</a></li> *@
                             </ul>
+                        </li>
+                        <!--Carrito de Compra-->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Cliente/Carrito/Index">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
                     </ul>
                                 <!-- LoginPartial Alineado a la derecha-->
                                 <div class="navbar-nav ms-auto">

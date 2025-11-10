@@ -19,7 +19,7 @@ namespace ECommerceDualPrint3D.Pages.Admin.Productos
         public void OnGet()
         {
             //Cargamos todas las categorias desde la base de datos
-            Productos = _unitOfWork.Producto.GetAll("Categoria");
+            Productos = _unitOfWork.Producto.GetAll(filter: null, "Categoria");
         }
 
         public async Task<IActionResult> OnPostDeleteAsync([FromBody] int id)

@@ -25,8 +25,7 @@
                 <p>@Model.CarritoCompra.Producto.Descripcion</p>
                 <p><strong>Cantidad disponible:</strong> @Model.CarritoCompra.Producto.CantidadDisponible</p>
 
-                <!-- Formulario para cantidad-->
-                <form method="post">
+                
                     <div class="mb-3">
                         <label for="Cantidad" class="form-label">Cantidad</label>
                         <input type="number" id="Cantidad"
@@ -42,7 +41,7 @@
                        <a asp-page="/Cliente/Inicio/Index" class="btn btn-success mt-auto w-50">Regresar</a>
                        <button type="submit" class="btn btn-dark w-50"><i class="fa-solid fa-cart-shopping"></i>  Agregar al Carrito</button>
                     </div>
-                </form>
+               
             </div>
         </div>
     </form>

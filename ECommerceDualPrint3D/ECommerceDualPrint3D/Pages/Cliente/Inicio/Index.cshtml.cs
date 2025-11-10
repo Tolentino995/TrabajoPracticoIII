@@ -18,7 +18,7 @@ namespace ECommerceDualPrint3D.Pages.Cliente.Inicio
         public void OnGet()
         {
             //Usamos el método GetAll para incluir categorías relacionadas
-            Productos = _unitOfWork.Producto.GetAll("Categoria");
+            Productos = _unitOfWork.Producto.GetAll(filter: null, "Categoria");
         }
     }
 }
