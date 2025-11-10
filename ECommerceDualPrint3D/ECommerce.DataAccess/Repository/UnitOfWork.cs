@@ -19,6 +19,7 @@ namespace ECommerce.DataAccess.Repository
             CarritoCompra = new CarritoCompraRepository(_context);
             Orden = new OrdenRepository(_context);
             DetalleOrden = new DetalleOrdenRepository(_context);
+            ApplicationUser = new ApplicationUserRepository(_context);
         }
 
         public ICategoriaRepository Categoria { get; private set; }
@@ -26,6 +27,7 @@ namespace ECommerce.DataAccess.Repository
         public ICarritoCompraRepository CarritoCompra { get; private set; }
         public IOrdenRepository Orden { get; private set; }
         public IDetalleOrdenRepository DetalleOrden { get; private set; }
+        public IApplicationUserRepository ApplicationUser { get; private set; }
 
         public void Dispose()
         {
