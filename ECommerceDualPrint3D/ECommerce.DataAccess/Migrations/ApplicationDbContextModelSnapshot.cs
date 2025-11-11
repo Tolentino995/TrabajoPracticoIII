@@ -115,6 +115,9 @@ namespace ECommerce.DataAccess.Migrations
                     b.Property<string>("Direccion")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Estado")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("FechaOrden")
                         .HasColumnType("datetime2");
 

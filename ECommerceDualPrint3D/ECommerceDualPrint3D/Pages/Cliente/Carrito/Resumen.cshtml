@@ -36,6 +36,7 @@
                                     </div>
                                     <div class="col-7">
                                         <input asp-for="Orden.NombreUsuario" class="form-control" readonly disabled/>
+                                        <span asp-validation-for="Orden.NombreUsuario" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <div class="row my-1">
@@ -44,6 +45,7 @@
                                     </div>
                                     <div class="col-7">
                                         <input asp-for="Orden.Telefono"  type="tel" class="form-control" readonly disabled/>
+                                        <span asp-validation-for="Orden.Telefono" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <div class="row my-1">
@@ -52,6 +54,7 @@
                                     </div>
                                     <div class="col-7">
                                         <textarea data-no-tinymce="true" asp-for="Orden.Direccion" class="form-control" style="height: 100px;" readonly disabled></textarea>
+                                        <span asp-validation-for="Orden.Direccion" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <div class="row my-1">

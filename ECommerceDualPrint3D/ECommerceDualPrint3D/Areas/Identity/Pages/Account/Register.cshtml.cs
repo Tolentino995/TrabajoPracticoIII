@@ -85,6 +85,8 @@ namespace ECommerceDualPrint3D.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
+            
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -105,6 +107,10 @@ namespace ECommerceDualPrint3D.Areas.Identity.Pages.Account
             public string Direccion { get; set; }
             [Required]
             public string Pais { get; set; }
+
+            [Required]
+            [Display(Name = "Teléfono")]
+            public string PhoneNumber { get; set; }
 
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
@@ -139,6 +145,7 @@ namespace ECommerceDualPrint3D.Areas.Identity.Pages.Account
                 user.Ciudad = Input.Ciudad;
                 user.Direccion = Input.Direccion;
                 user.Pais = Input.Pais;
+                user.PhoneNumber = Input.PhoneNumber;
 
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
